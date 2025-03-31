@@ -1,12 +1,12 @@
 import {beforeEach, expect, test} from 'vitest'
-import type {Todolist} from '../../../app/App.tsx'
+import type {Todolist} from '../../../../app/App.tsx'
 import {
   changeTodolistFilterAC,
   changeTodolistTitleAC,
   createTodolistAC,
   deleteTodolistAC,
   todolistsReducer
-} from './todolists-reducer.ts'
+} from '../todolists-reducer.ts'
 import {nanoid} from "@reduxjs/toolkit";
 
 let todolistId1: string
