@@ -1,14 +1,14 @@
-import {createTheme} from "@mui/material/styles";
+import { createTheme } from "@mui/material/styles"
 
-export type ThemeMode = 'dark' | 'light'
+export type ThemeMode = "dark" | "light"
 
-export const getTheme = (themeMode:ThemeMode) => {
-    return createTheme({
-        palette: {
-            mode: themeMode,
-            primary: {
-                main: '#087EA4',
-            },
-        },
-    })
+export const getTheme = (themeMode: ThemeMode) => {
+  return createTheme({
+    palette: {
+      mode: themeMode,
+      primary: {
+        main: "#087EA4",
+      },
+    },
+  })
 }

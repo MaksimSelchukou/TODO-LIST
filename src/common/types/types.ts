@@ -1,14 +1,14 @@
-import {Todolist} from "@/app/AppHttpRequests.tsx";
+import { DomainTodolist } from "@/app/AppHttpRequests.tsx"
 
 export type FieldError = {
-    error: string
-    field: string
+  error: string
+  field: string
 }
 export type BaseResponse<T = {}> = {
-    data: T
-    resultCode: number
-    messages: string[]
-    fieldsErrors: FieldError[]
+  data: T
+  resultCode: number
+  messages: string[]
+  fieldsErrors: FieldError[]
 }
 
 export type CreateTodolistResponse = BaseResponse<{ item: Todolist }>
